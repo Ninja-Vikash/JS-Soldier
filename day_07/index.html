@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+        Main Screen
+     -->
+    <main>
+        <h2 class="heading">Dice Game</h2>
+
+        <!-- 
+            Point box
+         -->
+        <div class="box" id="box">
+            <div class="points" id="num1">1</div>
+            <div class="points" id="num2">2</div>
+            <div class="points" id="num3">3</div>
+            <div class="points" id="num4">4</div>
+            <div class="points" id="num5">5</div>
+            <div class="points" id="num6">6</div>
+        </div>
+
+        <!-- 
+            Button for getting point
+         -->
+        <button id="rumbleBtn" onclick="rumble()">Rumble</button>
+    </main>
+
+    <script>
+        const rumbleBtn = document.querySelector("#rumbleBtn")
+        const points = document.querySelectorAll(".points")
+
+        console.log(points)
+
+        // Dice min and max number
+        const min = 1
+        const max = 6
+
+        // fn() for rumbling dice
+        function rumble() {
+            let randomNumber = Math.trunc(Math.random() * (max - min)) + min
+
+            points.forEach(point => {
+                point.style.display = "none"
+            })
+
+            points[randomNumber - 1].style.display = "flex"
+
+            console.log(`Rolled ${randomNumber}`)
+            
+        }
+    </script>
+</body>
+</html>
