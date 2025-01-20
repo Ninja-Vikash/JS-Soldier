@@ -8,11 +8,11 @@
 
 // If you are well known of ending condition when to stop while loop is great
 
-let i = 0
+// let i = 0
 
-while(i < 5){
-    console.log(`I'm a JS Soldier!`)
-}
+// while(i < 5){
+//     console.log(`I'm a JS Soldier!`)
+// }
 
 // console.log("Finished!")
 
@@ -29,17 +29,27 @@ while(i < 5){
 
 // let i = 0
 
-do {
-    console.log(`I'm a JS Soldier!`)
-    i++;
-}
-while (i > 5)
+// do {
+//     console.log(`I'm a JS Soldier!`)
+//     i++;
+// }
+// while (i > 5)
 
-console.log("Finished!")
+// console.log("Finished!")
 
 
-console.log(`I'm a JS Soldier`)
-console.log(`I'm a JS Soldier`)
-console.log(`I'm a JS Soldier`)
-console.log(`I'm a JS Soldier`)
-console.log(`I'm a JS Soldier`)
+// console.log(`I'm a JS Soldier`)
+// console.log(`I'm a JS Soldier`)
+// console.log(`I'm a JS Soldier`)
+// console.log(`I'm a JS Soldier`)
+// console.log(`I'm a JS Soldier`)
+
+
+// for(let i = 0; i < 5; i++){
+//     console.log(`Hello! JavaScript`)
+// }
+
+
+// for(initializer; condition; increment/decrement){
+//     // Statement
+// }
