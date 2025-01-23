@@ -64,26 +64,27 @@ Vehicle.data = function(){
     console.log("Not possible")
 }
 
+Vehicle.prototype.data = function(){
+    console.log("Possible")
+}
+
 const car = new Vehicle("BMW")
-car.drive()
+car.data()
 
 
 // Note: Can't add new method in class from outside
 
-function Vehicle(name){
-    this.name = name
+// function Vehicle(name){
+//     this.name = name
 
-    this.drive = function(){
-        console.log("Car is driving")
-    }
-}
+//     this.drive = function(){
+//         console.log("Car is driving")
+//     }
+// }
 
-// const car = new Vehicle("BMW")
-// car.print()
-
-// Vehicle.prototype.drive = function() {
-//     console.log("car is driving")
+// Vehicle.prototype.data = function() {
+//     console.log("Possible")
 // }
 
 // const car = new Vehicle("BMW")
-// car.drive()
+// car.data()
