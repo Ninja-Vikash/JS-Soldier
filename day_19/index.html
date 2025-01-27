@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>What do you want to learn?</h1>
+        <button id="html">HTML</button>
+        <button id="css">CSS</button>
+        <button id="js">JAVASCRIPT</button>
+        <button id="nothing">NOTHING</button>
+
+        <div id="root"></div>
+    </main>
+
+    <script>
+        const nothing = document.querySelector("#nothing")
+        const html = document.querySelector("#html")
+        const css = document.querySelector("#css")
+        const js = document.querySelector("#js")
+
+        const root = document.querySelector("#root")
+        
+
+        nothing.addEventListener("click", ()=> {
+            root.innerHTML = `<h3>As your wish!</h3>`
+        })
+
+        html.addEventListener("click", ()=> {
+            root.innerHTML = `
+                <h4>HTML Journey!</h4>
+                <ul>
+                    <li>What is HTML?</li>
+                    <li>HTML Tags</li>
+                    <li>Elements</li>
+                    <li>Attributes</li>
+                    <li>Semantic and Non-Semantic Tags</li>
+                    <li>Layouts</li>
+                    <li>Form elements</li>
+                </ul>
+            `
+        })
+
+        css.addEventListener("click", ()=> {
+            root.innerHTML = `
+                <h4>CSS Journey!</h4>
+                <ul>
+                    <li>What is CSS?</li>
+                    <li>CSS Selectors</li>
+                    <li>CSS Properties</li>
+                    <li>Colors</li>
+                    <li>Values</li>
+                    <li>Box Model</li>
+                    <li>Float</li>
+                    <li>Position Properties</li>
+                    <li>FlexBox</li>
+                    <li>Grid</li>
+                    <li>Transition</li>
+                    <li>Animations</li>
+                    <li>Media Queries</li>
+                    <li>CSS Functions</li>
+                    <li>CSS Variables</li>
+                </ul>
+            `
+        })
+
+        js.addEventListener("click", ()=> {
+            root.innerHTML = `
+                <h4>JavaScript Journey!</h4>
+                <ul>
+                    <li>What is JavaScript?</li>
+                    <li>Variables</li>
+                    <li>const, let & var</li>
+                    <li>Data Types</li>
+                    <li>Conversions</li>
+                    <li>Primitive and Non-Primitive</li>
+                    <li>String</li>
+                    <li>Numbers and Math</li>
+                    <li>Operators</li>
+                    <li>Conditionals</li>
+                    <li>functions</li>
+                    <li>Array</li>
+                    <li>Object</li>
+                    <li>class</li>
+                    <li>Async functions</li>
+                    <li>Event Handlers</li>
+                    <li>DOM Manipulation</li>
+                    <li>JS Libraries</li>
+                    <li>Animations using JS library</li>
+                </ul>
+            `
+        })
+
+    </script>
+</body>
+</html>
